@@ -12,30 +12,33 @@ function slider() {
   const prevBtn = document.querySelector(".js-btn-anterior");
   const nextBtn = document.querySelector(".js-btn-proximo");
   const scrollAnimals = document.querySelector(".js-scroll-animals");
+  let currentPosition = 0;
 
-  prevBtn.addEventListener("click", function () {
+  function moveTo(position) {
+    scrollAnimals.style.transform = `translateX(${position}px)`;
+  }
+
+  nextBtn.addEventListener("click", () => {
+    currentPosition -= 300;
+    moveTo(currentPosition);
+    updateCarouselCards();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentPosition += 300;
+    moveTo(currentPosition);
+    updateCarouselCards();
+  });
+
+  function updateCarouselCards() {
     const cards = document.querySelectorAll(".js-card");
+    cards.forEach(card => card.classList.remove("anima-previous", "anima-next"));
     cards[cards.length - 1].classList.add("anima-previous");
-    scrollAnimals.insertBefore(cards[cards.length - 1], scrollAnimals.firstChild);
-
     setTimeout(() => {
-      cards.forEach(card => {
-        card.classList.remove("anima-previous");
-      });
+      scrollAnimals.insertBefore(cards[cards.length - 1], scrollAnimals.firstChild);
+      cards[cards.length - 1].classList.remove("anima-previous");
     }, 1000);
-  });
-
-  nextBtn.addEventListener("click", function () {
-    const cards = document.querySelectorAll(".js-card");
-    cards[0].classList.add("anima-next");
-
-    setTimeout(() => {
-      scrollAnimals.appendChild(cards[0]);
-      cards.forEach(card => {
-        card.classList.remove("anima-next");
-      });
-    }, 1000);
-  });
+  }
 }
 
 function scrollAnimation() {

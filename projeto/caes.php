@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adoção de Cachorros</title>
+    <title>Aumigo</title>
     <link rel="stylesheet" href="assets/CSS/stylecoes.css">
 </head>
 <body>
-    <h1>Adoção de Cachorros</h1>
+    <h1>Aumigo</h1>
 
     <div class="filters">
         <label for="sex">Sexo:</label>
@@ -30,7 +30,6 @@
     </div>
 
     <div class="dogs-list" id="dogsList">
-        <!-- Aqui serão listados os cachorros para adoção após a filtragem -->
     </div>
 
     <script src="assets/js/scriptcaes.js"></script>
