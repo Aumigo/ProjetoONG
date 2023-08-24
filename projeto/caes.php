@@ -10,23 +10,23 @@
     <h1>Aumigo</h1>
 
     <div class="filters">
-        <label for="sex">Sexo:</label>
-        <select id="sex">
+        <label for="sexo">Sexo:</label>
+        <select id="sexo">
             <option value="">Todos</option>
-            <option value="male">Macho</option>
-            <option value="female">Fêmea</option>
+            <option value="masculino">Macho</option>
+            <option value="feminino">Fêmea</option>
         </select>
 
-        <label for="age">Idade:</label>
-        <select id="age">
+        <label for="idade">Idade:</label>
+        <select id="idade">
             <option value="">Todas</option>
-            <option value="puppy">Filhote</option>
-            <option value="adult">Adulto</option>
-            <option value="senior">Idoso</option>
+            <option value="filhote">Filhote</option>
+            <option value="adulto">Adulto</option>
+            <option value="idoso">Idoso</option>
         </select>
 
-        <label for="breed">Raça:</label>
-        <input type="text" id="breed" placeholder="Digite a raça...">
+        <label for="raca">Raça:</label>
+        <input type="text" id="raca" placeholder="Digite a raça...">
     </div>
 
     <div class="dogs-list" id="dogsList">

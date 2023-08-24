@@ -1,0 +1,23 @@
+CREATE DATABASE adocao_animais;
+USE adocao_animais;
+CREATE TABLE cachorros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    caminho_imagem VARCHAR(255)
+);
+
+CREATE TABLE IF NOT EXISTS arquivos (
+  arquivo_id int(10) NOT NULL AUTO_INCREMENT,
+  arquivo_nome varchar(50) NOT NULL,
+  arquivo_local varchar(100) NOT NULL,
+  PRIMARY KEY (arquivo_id)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1;
+
+INSERT INTO cachorros (nome, descricao, caminho_imagem)
+VALUES
+    ('Cachorro Fofo', 'Esse é um cachorro muito fofo e brincalhão.', '‪C:\wamp64\www\projeto\Imagens'),
+    ('Cachorro Amigável', 'Um cachorro amigável e adora brincar com crianças.', '‪C:\wamp64\www\projeto\Imagens');
+
+
+ 
