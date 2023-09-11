@@ -28,8 +28,8 @@
                                 <li class="dropdown-item">
                                     <button type="button" class="dropdown-btn sub-btn">Raças</button>
                                     <ul class="dropdown-lista lista-racas-menu">
-                                        <li><a href="caes.php">Cães</a></li>
-                                        <li><a href="gatos.php">Gatos</a></li>
+                                        <li><a href="cadastrodecachorro.php">Cães</a></li>
+                                        <li><a href="cadastrodegato.php">Gatos</a></li>
 
                                         
                                     </ul>

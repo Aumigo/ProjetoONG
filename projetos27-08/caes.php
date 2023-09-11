@@ -32,6 +32,14 @@
     <div class="dogs-list" id="dogsList">
     </div>
     <?php include 'rodape.php'; ?>
-    <script src="assets/js/scriptcaes.js"></script>
+   <?php
+
+        
+
+
+
+
+
+    ?>
 </body>
 </html>
