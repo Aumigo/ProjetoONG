@@ -1,0 +1,38 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Cor de fundo da página */
+}
+
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #343a40; /* Cor de fundo da barra de navegação */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Cor do ícone do botão de alternância */
+}
+
+.navbar-toggler {
+    border-color: #fff; /* Cor da borda do botão de alternância */
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none; /* Remove a borda de foco */
+}
+
+.navbar-nav .nav-link {
+    color: black; /* Cor do texto do link */
+    margin-right: 20px; /* Espaçamento entre os links */
+    transition: color 0.2s; /* Efeito de transição de cor */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107; /* Cor do texto do link ao passar o mouse por cima */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    font-weight: bold; /* Estilo para o link ativo */
+}
